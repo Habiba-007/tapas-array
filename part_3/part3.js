@@ -112,3 +112,11 @@ console.log(moreFindHim);
 let moreFindHims = lotsElement.lastIndexOf('kodBanu');
 console.log(moreFindHims);
 
+
+
+/*Array Another Method= reverse()method=its meutable method*/
+// ei method array somosto element k reverse kore fele mane last element theke samner dike chole ase 
+const reverseElement = ['tom', 'jon', 'bruce', 'sina', 'mina', 'denver'];
+const reverse = reverseElement.reverse();
+console.log(reverse)
+
