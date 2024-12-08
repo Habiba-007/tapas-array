@@ -119,4 +119,146 @@ console.log(moreFindHims);
 const reverseElement = ['tom', 'jon', 'bruce', 'sina', 'mina', 'denver'];
 const reverse = reverseElement.reverse();
 console.log(reverse)
+ 
+ 
 
+/*Another Most importent method was= sort()Method and its mutable method */
+const allNames = [
+   'farukMia',
+   'chanMia',
+   'dolaMia',
+   'abdulMia',
+   'basarMia',
+   'ekramMia'
+];
+ 
+const sortingName = allNames.sort();
+console.log(sortingName)
+console.log(sortingName === allNames)
+
+// use comparator function for example of sorting 
+// let a = 10;
+// let b = 5;
+function sortingNames(a=10,b=5) {
+   if (a > b) {
+      return -1;
+   }
+   if (a<b) {
+      return 1;
+   } else {
+      return 0
+   }
+}
+console.log(sortingNames());
+
+let smallNumber = 10;
+let bigNumber = 20;
+function numbers() {
+   return smallNumber === bigNumber ? 0 : smallNumber > bigNumber ? -1 : 1;
+}
+console.log(numbers())
+
+let c = 100;
+let d = 200;
+function done(c,d) {
+   if (c>d) {  
+      return -1;
+   }
+   if (c<d) {
+      return 1;
+   }
+   return 0
+}
+console.log(done(c, d))
+// now this function use to sort()method 
+const decending = allNames.sort(function sortingNames(a = 10, b = 5) {
+   if (a > b) {
+      return -1;
+   }
+   if (a < b) {
+      return 1;
+   } else {
+      return 0
+   }
+});
+console.log(decending)
+
+function subject(bangla=100,english=200) {
+   return bangla === english ? 0 : bangla > english ? -1 : 1;
+}
+console.log(subject())
+const anotherDecending = allNames.sort(function subject(bangla = 100, english = 200) {
+   return bangla === english ? 0 : bangla > english ? -1 : 1;
+});
+console.log(anotherDecending)
+
+// array-number sorting 
+let ages = [2, 1000, 10, 3, 23, 12, 30, 21];
+let ageResult = ages.sort();
+console.log(ageResult)
+function menAge() {
+   return k === m ? 0 : k > m ? -1 : 1;
+}
+let ageFind=ages.sort(function menAge(k,m) {
+   return k === m ? 0 : k > m ? -1 : 1;
+})
+console.log(ageFind)
+function allAges() {
+   return n === o ? 0 : n > o ? 1 : -1;
+}
+let ageFinding=ages.sort(function allAges(n,o) {
+   return n === o ? 0 : n > o ? 1 : -1;
+})
+console.log(ageFinding)
+let otherAge=ages.sort(function (a,b) {
+   return a - b;
+})
+console.log(otherAge)
+let otherAges=ages.sort(function  (a,b) { 
+   return b - a;
+})
+console.log(otherAges);
+
+
+
+/*♟️👉🏽Now we talk Array complex Method= Array.splice()*/
+// splice ekta array er element k delete kore abar new element insert korte pare and abar delete na korew new element insert korte pare 
+const spliceing = ['alex', 'bob', 'kery'];
+let elementsDeleted = spliceing.splice(0)
+console.log(elementsDeleted)
+console.log(spliceing);
+let anotherSplice = [1, 2, 3, 4, 5];
+let deleted = anotherSplice.splice(0);
+console.log(anotherSplice);
+console.log(deleted)
+
+let fruits = ['apple', 'bannana', 'orange', 'pinapple'];
+let adding = fruits.splice(4, 0, 'kukumbora');
+console.log(adding);
+console.log(fruits);
+
+
+
+/*♟️✔️ Another Array Method- Array.at()method-eta array-er element gulak toola ana */
+let junkFood = ['poori', 'singara', 'sandwich', 'somocha', 'belpoori', 'misti', 'chotpoti'];
+let pickUp = junkFood.at(4);
+console.log(pickUp);
+console.log(junkFood);
+let anotherPickup = junkFood.at(-3);
+console.log(anotherPickup);
+let anohterPickUps = junkFood.at(-7);
+console.log(anohterPickUps);
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

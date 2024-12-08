@@ -146,13 +146,14 @@ console.log(list);
 // use use strict for this line of code 
 "use strict"
 const cash = [12, 13, 14, 15];
-Object.defineProperty(cash, "lenght", { writable: false });
+Object.defineProperty(cash, "length", { writable: false });
 cash.length=0
 // console.log(cash);not working this method
 
 
   
 
+ 
 
 
 
