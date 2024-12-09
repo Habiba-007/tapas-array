@@ -250,10 +250,81 @@ let anohterPickUps = junkFood.at(-7);
 console.log(anohterPickUps);
 
 
+/*✔️♟️👉🏽 Array another method =Array.flat()method=immutable method*/
+const array = [0, 1, 2, [3, 4]];
+let flatMethod = array.flat();
+console.log(flatMethod)
+// console.log(array);
+
+let arr = [0, 1, [2, [3, [4, 5]]]];
+console.log(arr.flat(2))
+console.log(arr.flat(3));
+console.log(arr.flat(Infinity));
+ 
+
+// 👉🏽Now Array another method=Array.copyWithin()method= its immutable method
+// copyWtihin syntex = copyWtihin(target, start, end);
+const letters = ['a', 'b', 'c', 'd', 'e', 'f'];
+let accumulate = letters.copyWithin(0, 3, 6);
+console.log(accumulate)
+let numberArr = [1, 2, 3, 4, 5, 6];
+let anotherAccurmulate = numberArr.copyWithin(1, 3, 4);
+console.log(anotherAccurmulate);
+let namesArr = ['jack', 'alex', 'bob', 'martin', 'harsha', 'jhoncina'];
+let namesAccumulate = namesArr.copyWithin(2, 3, 5);
+console.log(namesAccumulate);
+const banglaNames = ['kuddusMia', 'chanMia', 'abbasMia', 'lalMia', 'khurshedMia', 'dolaMia'];
+let namesOccupy = banglaNames.copyWithin(1, 3);
+console.log(namesOccupy);
 
 
 
 
+
+// Now-♟️♟️♟️Array new upcoming methood=every method are immutable 
+/*♟️The toReversed()method;*/
+/*♟️The toSpliced()method*/
+/*♟️The toSorted()method*/
+/*♟️♟️The with()method*/
+
+// now 1st toReversed()method =this is a immutable array
+const itemsArr = [1, 2, 3, 4, 5, 6];
+let reversedArr = itemsArr.toReversed();
+console.log(itemsArr);
+console.log(reversedArr);
+console.log(itemsArr===reversedArr);
+console.log(itemsArr.reverse());
+
+// now 2nd toSorted()method =immutable
+const allFruits = ['apple', 'codBel', 'bannana', 'dragonFall'];
+let fruitsItems = allFruits.toSorted();
+console.log(fruitsItems);
+console.log(allFruits);
+console.log(allFruits === fruitsItems)
+
+// now 3rd toSpliced()method=immutable 
+const months = ['jan', 'appril', 'may', 'jun', 'july'];
+let spliceMonths = months.toSpliced(1, 0, 'february');
+console.log(spliceMonths);
+console.log(months);
+
+const stationary = ['book', 'paper', 'pencil', 'ireger', 'pen'];
+let addAndDelete = stationary.toSpliced(3, 1, 'scell');
+console.log(stationary);
+console.log(addAndDelete);
+console.log(stationary===addAndDelete);
+
+
+// now 4th with()=handy method and immutable metod
+const arrOfNumbers = [1, 2, 3, 4, 5, 6, 7];
+let finalResults = arrOfNumbers.with(6,8);
+console.log(finalResults);
+console.log(arrOfNumbers);
+let anotherResults = arrOfNumbers.with(-3, 9);
+console.log(anotherResults);
+console.log(arrOfNumbers);
+console.log(arrOfNumbers === finalResults);
+console.log(arrOfNumbers===anotherResults);
 
 
 
